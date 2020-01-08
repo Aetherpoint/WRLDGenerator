@@ -1,5 +1,5 @@
 # Landscape Lifter
-Unity C# code for the app [Terace](https://apps.apple.com/us/app/terace/id1492035680?ls=1). 
+Unity C# code for making mesh from hieghtmaps generated from the [Terace](https://apps.apple.com/us/app/terace/id1492035680?ls=1) app.
 
 ![](https://www.aetherpoint.com/media/products/Product_Terace.jpg)
 
