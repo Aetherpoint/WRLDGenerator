@@ -7,23 +7,27 @@ using UnityEngine;
 /// </summary>
 public class LandscapeLifter : MonoBehaviour
 {
+    // Map dimensions
+    public int xSize = 50;
+    public int zSize = 50;
 
-    Mesh mesh;
+    // Map scale
+    public float scale = 0.004f;
 
-	Vector3[] vertices;
-	int[] triangles;
+    // The maximum height for the terrain at 100% darkness
+    public float heightMax = 12f; 
 
-	private int xSize = 50;
-	private int zSize = 50;
-
+    // Texture to import
     public Texture2D texture2D;
+
+    private Mesh mesh;
+	private Vector3[] vertices;
+	private int[] triangles;
 
     void Start()
 	{
-        // Generate Mesh
         mesh = new Mesh();
 		GetComponent<MeshFilter>().mesh = mesh;
-
         Center();
     }
 
@@ -33,9 +37,6 @@ public class LandscapeLifter : MonoBehaviour
         UpdateMesh();
     }
 
-    private float scale = 0.004f;
-
-
     /// <summary>
     /// Center the mesh
     /// </summary>
@@ -44,9 +45,6 @@ public class LandscapeLifter : MonoBehaviour
         transform.localScale = new Vector3(scale, scale, scale);
         transform.localPosition = new Vector3((xSize * -0.5f) * scale, 0, (xSize * -0.5f) * scale);
     }
-
-        
-    public float heightMax = 12f; // The maximum height for the terrain at 100% darkness
 
     /// <summary>
     /// Update the mesh height
