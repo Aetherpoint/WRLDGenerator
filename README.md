@@ -1,5 +1,5 @@
 # Landscape Lifter
-Unity C# code for making mesh from hieghtmaps generated from the [Terace](https://apps.apple.com/us/app/terace/id1492035680?ls=1) app.
+Unity C# code for making mesh from heightmaps generated from the [Terace](https://apps.apple.com/us/app/terace/id1492035680?ls=1) app.
 
 ## Controls
 `int xSize`, `int zSize` – Map dimensions
