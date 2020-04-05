@@ -1,17 +1,19 @@
-﻿Shader "Custom/GradientThreeColor" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/GradientThreeColor" {
      Properties {
          [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
          _ColorTop ("Top Color", Color) = (1,1,1,1)
          _ColorMid ("Mid Color", Color) = (1,1,1,1)
          _ColorBot ("Bot Color", Color) = (1,1,1,1)
-         _Middle ("Middle", Range(0.001, 0.999)) = 1
+         _Middle ("Middle", Range(0.001, 0.999)) = 0.5
      }
  
      SubShader {
          Tags {"Queue"="Background"  "IgnoreProjector"="True"}
          LOD 100
  
-         ZWrite On
+         ZWrite On // OFF: Allows us to show the mesh on top of other sprites
  
          Pass {
          CGPROGRAM
@@ -45,4 +47,4 @@
          ENDCG
          }
      }
-}
+ }
