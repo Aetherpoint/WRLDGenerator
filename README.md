@@ -2,7 +2,9 @@
 Terace is an iPhone app for quickly generating architectural 3D sketches through your camera. 
 
 # WRLDGenerator
-WRLDGenerator generates sketches from `WRLD.JSON` files created with [Terace](https://apps.apple.com/us/app/terace/id1492035680?ls=1) app. 
+WRLDGenerator generates sketches from `WRLD.JSON` files created with [Terace](https://apps.apple.com/us/app/terace/id1492035680?ls=1) app.
+
+![https://github.com/Aetherpoint/WRLDGenerator/blob/master/Tutorial/WRLDGenerator.png]
 
 ## Setup
 
